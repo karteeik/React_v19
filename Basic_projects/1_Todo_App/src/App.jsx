@@ -1,34 +1,34 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
+import TodoItems from "./Components/TodoItems";
+import Styles from "./App.module.css";
 
 function App() {
+  const todoItems = [
+    {
+      todoName: "Buy Milk",
+      todoDate: "24/11/25",
+    },
+    {
+      todoName: "Complete Project",
+      todoDate: "12/10/25",
+    },
+    {
+      todoName: "Buy Snake",
+      todoDate: "02/10/25",
+    },
+    {
+      todoName: "Change Cover",
+      todoDate: "14/02/25",
+    },
+  ];
+
   return (
-    <center id="todo-container">
+    <center id={Styles["todo-container"]}>
       <AppName />
       <AddTodo />
-      <div class="container text-center">
-        <div class="row item-container">
-          <div class="col-6">Go to College</div>
-          <div class="col-4">17/07/2025</div>
-          <div class="col-2">
-            <button type="button" class="btn btn-danger buttons">
-              Delete
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <div class="row item-container">
-          <div class="col-6">Go to Work</div>
-          <div class="col-4">17/07/2025</div>
-          <div class="col-2">
-            <button type="button" class="btn btn-danger buttons">
-              Delete
-            </button>
-          </div>
-        </div>
-      </div>
+      <TodoItems todoItems={todoItems} />
     </center>
   );
 }

@@ -1,0 +1,20 @@
+.btnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 800;
+    border: none;
+    background-color: rgb(147, 109, 60);
+    color: rgb(58, 16, 16);
+
+    &:hover{
+        background-color: rgb(155, 93, 11);
+    }
+}

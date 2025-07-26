@@ -7,10 +7,6 @@ input{
     width: 100%;
 }
 
-#todo-container{
-    margin: 20px;
-}
-
 .item-container{
     text-align: left;
     margin: 20px;
