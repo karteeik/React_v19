@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "monospace";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main_box {
+  width: 230px;
+  height: 110px;
+  border: 2px solid aquamarine;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.switch {
+  width: 90px;
+  height: 90px;
+  border: 2px solid blanchedalmond;
+  border-radius: 50%;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ON{
+  background-color: green;
+  transform: translateX(125px);
+  transition: 0.4s all;
+}
+.OFF{
+  background-color: red;
+  transform: translateX(0px);
+  transition: 0.4s all;
+}
