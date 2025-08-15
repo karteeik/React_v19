@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 // import State from "../Components/State";
 // import StateChallenge from "../Components/Statechallenge";
@@ -7,8 +7,10 @@ import "./App.css";
 // import InputComponent from "../Components/InputComponent";
 // import DisplayComponent from "../Components/DisplayComponent";
 
-import ToggleSwitch from "../Project/ToggleSwitch";
-import "../Project/ToggleSwitch.css";
+// import ToggleSwitch from "../Project/ToggleSwitch";
+// import "../Project/ToggleSwitch.css";
+
+import UseStatechallenge from "../Components/useStatechallenge";
 
 // function App() {
 //   return (
@@ -36,7 +38,8 @@ import "../Project/ToggleSwitch.css";
 const App = () => {
   return (
     <>
-      <ToggleSwitch />
+      {/* <ToggleSwitch /> */}
+      <UseStatechallenge/>
     </>
   );
 };
