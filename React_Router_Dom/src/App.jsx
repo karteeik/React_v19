@@ -5,13 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { About } from "./Pages/About";
-import { Contact } from "./Pages/Contact";
+import { Contact, ContactData } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
 import { Movie } from "./Pages/Movie";
 import { AppLayout } from "./Components/Layout/AppLayout";
 import "./App.css";
 import { ErrorPage } from "./Pages/ErrorPage";
 import { GetMovieData } from "./Api/GetData";
+import { MovieDetails } from "./Components/UI/MovieDeatails";
+import { GetMovieDetailss } from "./Api/GetMovieDetails";
 
 const App = () => {
   // new way to use react-router
@@ -35,8 +37,14 @@ const App = () => {
           loader: GetMovieData,
         },
         {
+          path: "/movie/:movieID",
+          element: <MovieDetails />,
+          loader: GetMovieDetailss,
+        },
+        {
           path: "/contact",
           element: <Contact />,
+          action: ContactData,
         },
         // {
         //   path: "*",
